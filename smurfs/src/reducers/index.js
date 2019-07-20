@@ -88,3 +88,5 @@ export const smurfReducer = ( state = initialDefaultState, action ) => {
         return state
   }
 } 
+
+export default smurfReducer
