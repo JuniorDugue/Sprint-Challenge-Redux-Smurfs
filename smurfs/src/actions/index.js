@@ -22,6 +22,7 @@ export const ADD_SMURF_FAILURE = "ADD_SMURF_FAILURE"
    U - updateSmurf
    D - deleteSmurf
 */
+
 //action creator 1
 export const getSmurfs = smurf => dispatch => {
   dispatch({ type: FETCHING_SMURFS_START })
