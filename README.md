@@ -1,4 +1,4 @@
-# Sprint Challenge: Redux - Smurfs
+# Sprint Challenge: Redux - Smurfs #
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored Redux, Redux I - II and Async Redux I - II. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web.
 
@@ -22,9 +22,15 @@ In this challenge, you are to build the Smurfs village once again, only this tim
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
-- [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
-- [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+- [x] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+Actions are called from within our app, their functionality is handled by reducers, and the result is posted to the store. The store handles the state of the entire application, instead of each component having its own state, thereby being a single source of truth.
+
+
+- [x] What is the difference between Application state and Component state? When would be a good time to use one over the other?Application state is global, Component state is confined to the scope of its own component and anywhere it is passed as props. It's generally advantageous to use Component state in forms and Application state in situations where the state's properties need to be passed between components.
+
+
+- [x] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+In Redux, reducers are synchronous by default. Thunk is a middleware that provides the ability to handle async operations in our action creators. A thunk is a function that returns another function, without side effects. This allows us to return functions containing our action creators and thus delay their calling simulating an asynchronous style of operation. 
 
 ## Project Set Up
 
